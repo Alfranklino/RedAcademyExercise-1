@@ -1,0 +1,142 @@
+body{
+    font-family: 'Roboto', serif;
+}
+/*Menu and Logo*/
+div.head{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    font-weight: 100;
+    color: #333333;
+    flex-basis: 50%;
+}
+div.ico{
+    flex-basis: 50%;
+}
+
+nav ul li{    
+    display: inline;
+    padding-left: 25px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li a:visited{
+    color: #333333;
+}
+nav ul li a:active{
+    color: #E22319;
+}
+/*Contents*-Welcome*/
+.welcome{
+    background-color: #E22319;
+    height: 639px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+div.welcome h3{
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+.x-content{
+    text-align: center;
+    margin-top:-10px;    
+}
+h1{
+    font-size: 38px;
+    font-weight: 900px;
+    color: #FFFFFF;
+    
+}
+h2{    
+    font-weight: 300px;
+    color: #333333;
+}
+/*Contents-Subtitle*/
+.subtitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;    
+}
+#sub-t{
+    width: 60%;
+}
+/*Line Separator*/
+hr{
+    color: #333333;
+    width: 100%;
+    margin-top: 60px;
+}
+.box-form{
+    /*width: 50%;*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 30px;    
+}
+input[type="text"]{
+    padding: 0px;
+    margin-bottom: 30px;
+    border: none;
+    color:#333333;
+    border-bottom: 1px solid;
+    outline:none;
+    width:700px;
+}
+
+.input-label{
+    display:flex;
+    flex-direction: column-reverse;
+}
+label{
+    margin-bottom: -15px;
+    pointer-events: none; /*Disable mouse pointer on that label*/
+    transition: .5s;
+}
+
+/*Manage effects on text-fields*/
+input[type="text"]:focus ~ label, 
+input[type="text"]:valid ~ label
+{
+    margin-bottom: 15px;
+    color: #E22319;
+    font-size: 12px;
+}
+
+.button-submit input[type="submit"]
+{
+   background:transparent;
+   border:none;
+   color:#FFFFFF;
+   outline: none;
+   background: #E22319;
+   padding: 10px 20px;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+div>input{   
+    font-size: 15px;
+}
+
+footer{
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    height: 88px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
